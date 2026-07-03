@@ -1,0 +1,65 @@
+/* Общий стиль для тела страницы */
+body {
+  margin: 0;
+  height: 100vh; /* высота окна браузера */
+  display: flex; /* чтобы центрировать содержимое */
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  font-family: Arial, sans-serif;
+}
+
+/* контейнер для счетчика и кнопок */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* окно отображения результата */
+.counter-display {
+  font-size: 4em; /* крупный шрифт */
+  padding: 20px;
+  border-radius: 10px; /* скругление */
+  width: 150px;
+  text-align: center;
+  background-color: red; /* по умолчанию, меняется в JS */
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* блок для кнопок */
+.buttons {
+  display: flex;
+  gap: 20px; /* расстояние между кнопками */
+  margin-bottom: 20px;
+}
+
+/* стили для кнопок */
+button {
+  padding: 10px 20px;
+  font-size: 1.5em; /* увеличенный размер */
+  border: none;
+  border-radius: 5px; /* скругление */
+  background: linear-gradient(145deg, #f093fb, #f5576c);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* стиль для отключенных кнопок */
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* сообщение при экстремальных значениях */
+#extremeMessage {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* скрытый элемент */
+.hidden {
+  display: none;
+}
